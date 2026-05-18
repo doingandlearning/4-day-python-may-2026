@@ -1,0 +1,44 @@
+Lab: Threading
+This lab is about Threading in Python.
+For this lab you should create a function called printer() that takes a message and a
+maximum value to use for a period to sleep.
+Within the function create a loop that iterates 10 times.
+Within the loop
+• generate a random number from 0 to the max period specified and then sleep for that
+period of time. You can use the random.randint() function for this.
+• Once the sleep period has finished print out the message passed into the function.
+• Then loop again until this has been repeated 10 times.
+Now create five threads to run five invocations of the function you produced above
+and start all five threads.
+Each thread should have a different max_sleep time.
+An example program to run the printer function five times via a set of Threads is
+given below:
+t1 = Thread(target=printer, args=('A', 10))
+t2 = Thread(target=printer, args=('B', 5))
+t3 = Thread(target=printer, args=('C', 15))
+t4 = Thread(target=printer, args=('D', 7))
+t5 = Thread(target=printer, args=('E', 2))
+t1.start()
+t2.start()
+t3.start()
+t4.start()
+t5.start()
+
+An example of the sort of output this could generate is given below:
+BAEAEABEDAEAEBEDCECBEEEADCDBBDABCADBBDABADCDCDCCCC
+
+Extension Point
+Point 1: Create a timer to print out the message “--->” roughly after 5 seconds. You should be
+able to start the timer using the start() method and see how this interacts with the 5 threads
+you have created. This output might thus be:
+DECBEA-->
+DEBECDEBEEBAEDEEABDBCCDBADBBCDCBDADACAAACCCA
+Point 2: Modify your code to print a message repeatedly after 5 seconds. For example:
+
+EBE-->
+EBCDEAE-->
+DEDBEBBE-->
+DEACBBECD-->
+BBDDBA-->
+
+
