@@ -26,12 +26,6 @@ class Result:
     def to_fahrenheit(self):
         return ((self.temperature - 270) * 1.8) + 32
 
-# Give me a list of tuples that i can loop over to instantiate
-# the result class. The choices of detectors are ATLAS, LMS, LHC.
-# dates should be in ISO format (YYYY-MM-DD).
-# temperatures should normally be between 0 and 30, but we should also
-# include some anomalies.
-
 results = [
     ("2026-01-01", "ATLAS", 25, "15:01:12"),
     ("2026-01-01", "LMS", 25, "15:01:12"),
