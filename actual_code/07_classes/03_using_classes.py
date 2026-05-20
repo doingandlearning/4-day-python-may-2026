@@ -35,10 +35,22 @@ results = [
     ("2026-01-01", "LHC", 31, "15:01:12"),
 ]
 
+results_as_dict = [
+    {
+        "date": date,
+        "detector": detector,
+        "temperature": temperature,
+        "time": time,
+    }
+    for date, detector, temperature, time in results
+]
+
 results_list = []
 
-for date, detector, temperature, time in results:
-    result = Result(date, detector, temperature, time)
-    results_list.append(result)
+for result in results_as_dict:
+    results_list.append(Result(result.get("date"),
+                               result.get("detector"),
+                               result.get("temperature"),
+                               result.get("time")))
 
-print(results_list)
+print([r for r in results_list if r.is_anomaly()])

@@ -42,7 +42,7 @@ class Result:
     def to_fahrenheit(self):
         return ((self.temperature - 270) * 1.8) + 32
 
-    
+
 
 result_3 = Result(date="2026-02-01", detector="ATLAS", temperature=3, time="15:01:12")
 result_4 = Result("2026-03-01", "LMS", 40, "10:01:12")
@@ -54,6 +54,4 @@ print(anomalies)
 temp_in_cel = [result.to_celsius() for result in results]
 print(temp_in_cel)
 
-import gc
 
-print(sum([1 for obj in gc.get_objects() if isinstance(obj, Result)]))
