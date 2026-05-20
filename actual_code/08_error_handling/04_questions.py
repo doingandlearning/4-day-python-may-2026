@@ -1,6 +1,7 @@
 def my_function():
     raise ValueError("Something went wrong.")
 
+# kevin@kevincunningham.co.uk
 
 try:
     my_function()
