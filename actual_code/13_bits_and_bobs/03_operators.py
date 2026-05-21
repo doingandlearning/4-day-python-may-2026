@@ -20,3 +20,6 @@ print(v3.x, v3.y)
 a = 3
 b = 5
 print(a + b)
+
+# pandas
+# matplotlib
