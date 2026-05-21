@@ -194,8 +194,3 @@ Highlights:
 - [packaging_your_project.md](packaging_your_project.md) — PyInstaller executables
 - [scientific_python_next.md](scientific_python_next.md) — NumPy, pandas, matplotlib, Jupyter
 - [threads_vs_processes.md](threads_vs_processes.md) — concurrency cheat sheet
-
-## Course materials
-
-Google Drive (CERN Python programming)
-https://drive.google.com/drive/folders/1Ivr3lT3lIq-1RXcvpDbh91NXcVBYhFuJ?usp=share_link
