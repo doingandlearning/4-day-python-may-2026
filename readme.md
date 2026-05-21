@@ -178,5 +178,24 @@ Lab 16: Optimise your code with threads
 
 Lab 17: Optimise your code with processes
 
+## After the course
+
+Post-course guides and links to continue learning, share scripts, and work with data:
+
+**[POST_COURSE.md](POST_COURSE.md)** — index of all post-course resources
+
+Highlights:
+
+- [learning_prompts.md](learning_prompts.md) — AI prompt templates for learning and debugging
+- [using_ai_after_the_course.md](using_ai_after_the_course.md) — using AI effectively and safely
+- [whats-next.md](whats-next.md) — courses, practice, communities, project ideas
+- [python_quick_reference.md](python_quick_reference.md) — docs, tracebacks, where to look things up
+- [sharing_your_project.md](sharing_your_project.md) — venv and requirements.txt
+- [packaging_your_project.md](packaging_your_project.md) — PyInstaller executables
+- [scientific_python_next.md](scientific_python_next.md) — NumPy, pandas, matplotlib, Jupyter
+- [threads_vs_processes.md](threads_vs_processes.md) — concurrency cheat sheet
+
+## Course materials
+
 Google Drive (CERN Python programming)
 https://drive.google.com/drive/folders/1Ivr3lT3lIq-1RXcvpDbh91NXcVBYhFuJ?usp=share_link
