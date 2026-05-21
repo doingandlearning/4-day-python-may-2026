@@ -458,39 +458,7 @@ Queue approach:
 * scalable
 * common in production systems
 
----
 
-# 9. Advanced direction (next topics)
-
-From here you can naturally teach:
-
-## ThreadPoolExecutor
-
-Higher-level threading.
-
-```python
-from concurrent.futures import ThreadPoolExecutor
-```
-
----
-
-## Deadlocks
-
-Two locks waiting on each other.
-
----
-
-## Semaphores
-
-Limit concurrent access.
-
----
-
-## Condition variables
-
-Thread coordination.
-
----
 
 # The most important conceptual progression
 
