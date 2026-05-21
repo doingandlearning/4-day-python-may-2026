@@ -21,18 +21,21 @@ class Player:
       print(guess)
 
   
-player1 = Player('John')
-print(player1)
-player1.increment_count()
-player1.add_guess(4)
-player1.increment_count()
-player1.add_guess(2)
-print(player1)
-print('History:')
-player1.print_history()
-player2 = Player('Denise')
-players = [player1, player2]
-print(players)
+class Game:
+  def __init__(self):
+    self.players = []
+  
+  def add_player(self, player):
+    self.players.append(player)
+  
+  def play_game(self):
+    for player in self.players:
+      play_game(player)
+  
+  def print_results(self):
+    for player in self.players:
+      print(player)
+
 
 # implement a guessing game using the Player class
 # do it procedurally 
