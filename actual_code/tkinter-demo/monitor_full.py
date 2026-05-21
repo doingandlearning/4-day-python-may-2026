@@ -193,12 +193,14 @@ class InstrumentMonitor(tk.Tk):
             textvariable=self.interval_var, width=7
         ).grid(row=0, column=6, padx=(0, 16))
 
+
+
         self.start_btn = ttk.Button(ctrl, text="▶  Start", command=self._start, style="Accent.TButton")
         self.start_btn.grid(row=0, column=7, padx=(0, 4))
 
         self.stop_btn = ttk.Button(ctrl, text="■  Stop", command=self._stop, state="disabled")
         self.stop_btn.grid(row=0, column=8, padx=(0, 0))
-
+        ttk.Scale(ctrl, from_=100, to=1000).grid(row=0, column=9, padx=(0, 16))
         # ── plot area ─────────────────────────────────────────────────
         plot_frame = ttk.Frame(self, style="Dark.TFrame")
         plot_frame.grid(row=1, column=0, sticky="nsew", padx=10, pady=(6, 4))
